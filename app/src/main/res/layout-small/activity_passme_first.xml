@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.simone.myapplication2.PassMe"
+    android:background="#ffffffff"
+
+    >
+
+    <GridLayout
+
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false">
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:text="Aggiungi"
+            android:id="@+id/aggiungi"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@drawable/icone_passme_add"
+            android:layout_margin="5dp" />
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:text="Visualizza"
+            android:id="@+id/visualizza"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@drawable/icone_passme_show"
+            android:clickable="false"
+            android:layout_margin="5dp" />
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:text="Elimina"
+            android:id="@+id/elimina"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:background="@drawable/icone_passme_elimina" />
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:text="Esci"
+            android:id="@+id/esci"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/icone_passme_exit"
+            android:clickable="true" />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Benvenuto "
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/help_delete"
+        android:layout_below="@+id/gridLayout"
+        android:layout_alignLeft="@+id/gridLayout"
+        android:layout_alignStart="@+id/gridLayout" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView2"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignRight="@+id/gridLayout"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:background="@drawable/help_exit" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView3"
+        android:background="@drawable/help_add"
+        android:layout_alignLeft="@+id/gridLayout"
+        android:layout_alignStart="@+id/gridLayout"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView4" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView4"
+        android:background="@drawable/help_show"
+        android:layout_above="@+id/gridLayout"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:layout_alignRight="@+id/gridLayout" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad"
+
+        android:gravity="bottom|left"
+        android:baselineAligned="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/gridLayout"
+        android:layout_alignParentLeft="true"></LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Application2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_registra">Registrazione</string>
+    <string name="title_activity_cambia">Cambio credenziali</string>
+    <string name="title_activity_delete">Cancella</string>
+    <string name="title_activity_add">Aggiungi</string>
+    <string name="title_activity_show">Lista</string>
+    <string name="title_activity_list">list</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_show2">show2</string>
+    <string name="title_activity_delete2">delete2</string>
+
+</resources>

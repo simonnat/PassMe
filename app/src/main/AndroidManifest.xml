@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simone.passme" >
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icona"
+        android:label="PassMe"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="PassMe"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PassMe"
+            android:label="PassMe"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".registra"
+            android:label="@string/title_activity_registra"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".cambia"
+            android:label="@string/title_activity_cambia"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".delete"
+            android:label="@string/title_activity_delete" >
+        </activity>
+        <activity
+            android:name=".add"
+            android:label="@string/title_activity_add" >
+        </activity>
+        <activity
+            android:name=".show"
+            android:label="@string/title_activity_show" >
+        </activity>
+        <activity
+            android:name=".list"
+            android:label="@string/title_activity_list" >
+        </activity>
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name=".show2"
+            android:label="@string/title_activity_show2" >
+        </activity>
+        <activity
+            android:name=".delete2"
+            android:label="@string/title_activity_delete2" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

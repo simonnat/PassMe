@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Login"
+    android:id="@+id/screen"
+    android:background="@drawable/texture5"
+    android:clickable="false">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabl"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ff319ea7">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Username"
+                android:layout_column="2"
+                android:textColor="#ffffffff"
+                 />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_column="9"
+                android:textColor="#ffffffff" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Password"
+                android:id="@+id/textView1"
+                android:layout_column="2"
+                android:textColor="#ffffffff" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_column="9"
+                android:textColor="#ffffffff" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/list_back"
+                android:layout_column="2"
+                android:enabled="true"
+                android:background="@color/back_pulsanti"
+
+                android:singleLine="false"
+                android:textColor="#ffffffff"
+                android:clickable="true"
+                android:layout_span="8" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t"
+        android:layout_column="0"
+        android:layout_marginTop="19dp"
+        android:textSize="@dimen/errato"
+        android:textColor="#ffff0002"
+        android:layout_below="@+id/tabl"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambia nome utente e password"
+        android:id="@+id/change"
+        android:layout_below="@+id/t"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/back_pulsanti"
+        android:textColor="#ffffffff" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="125dp"
+        android:id="@+id/imageView2"
+        android:layout_above="@+id/tabl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/logo" />
+
+</RelativeLayout>

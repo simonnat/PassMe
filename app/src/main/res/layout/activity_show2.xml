@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ffffffff">
+
+    <!-- A vertical LinearLayout in a ScrollView. This emulates a ListView (and is lighter weight
+         than a ListView when there aren't many rows). -->
+
+    <!-- The "empty" view to show when there are no items in the "list" view defined above. -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Elenco"
+        android:id="@+id/textView"
+        android:layout_gravity="left|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:textSize="40sp" />
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:layout_gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/textView"
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/back"
+        android:background="#ffe7e9e9">
+
+        <!-- Note that this LinearLayout has the "animateLayoutChanges" property set to true.
+             This tells the framework to automatically animate child views (in this case, rows)
+             as they are added to and removed from the LinearLayout. -->
+        <LinearLayout android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:divider="?android:dividerHorizontal"
+            android:animateLayoutChanges="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+    </ScrollView>
+
+    <TextView android:id="@android:id/empty"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="32dp"
+        android:text="Nessuna password memorizzata"
+        android:textColor="?android:textColorSecondary"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:id="@+id/back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_back" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/export"
+        android:layout_alignTop="@+id/back"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_esporta" />
+
+</RelativeLayout>
